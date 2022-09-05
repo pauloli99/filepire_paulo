@@ -24,6 +24,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'no-unused-vars': 0,
     'import/no-cycle': 0,
     'no-console': 0,
     'react/prop-types': 0,
