@@ -6,8 +6,6 @@ import useStyles from './styles';
 import { Movie } from '..';
 
 const MovieList = ({ movies }) => {
-  console.log('list');
-
   const classes = useStyles();
 
   return (
