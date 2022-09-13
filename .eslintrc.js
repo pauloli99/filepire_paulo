@@ -47,5 +47,6 @@ module.exports = {
     'no-array-index-key': 0,
     camelcase: 0,
     'react/function-component-definition': 0,
+    'consistent-return': 0,
   },
 };
