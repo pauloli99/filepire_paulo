@@ -159,6 +159,25 @@ const MovieInfomation = () => {
           ? <MovieList movies={recommendations} numberOfMovies={12} />
           : <Box>Sorry, nothing was found.</Box>}
       </Box>
+      {console.log(data?.videos?.results)}
+      <Modal
+        closeAfterTransition
+        className={classes.modal}
+        open={open}
+        onClose={() => setOpen(false)}
+      >
+        {data?.videos?.results.length
+          && (
+          <iframe
+            autoPlay
+            className={classes.video}
+            frameBorder="0"
+            title="Trailer"
+            src={`https://www.youtube.com/embed/${data.videos.results[0].key}`}
+            allow="autoplay"
+          />
+          )}
+      </Modal>
     </Grid>
   );
 };
